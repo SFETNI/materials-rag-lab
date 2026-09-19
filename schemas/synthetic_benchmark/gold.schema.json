@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "answer_reference": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "embedding_allowed": {
+      "const": false
+    },
+    "evidence_requirements": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "any_of": {
+            "items": {
+              "pattern": "^[A-Za-z0-9-]+#[a-z0-9-]+$",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "role": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "any_of"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "forbidden_claims": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "label_status": {
+      "const": "authored_not_expert_validated"
+    },
+    "numeric_checks": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "abs_tolerance": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "quantity": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "unit": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "quantity",
+          "value",
+          "unit",
+          "abs_tolerance"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "question_id": {
+      "pattern": "^SYNQ-[0-9]{3}-[AB]$",
+      "type": "string"
+    },
+    "required_claims": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "response_mode": {
+      "enum": [
+        "answer",
+        "qualify",
+        "correct_premise",
+        "abstain"
+      ]
+    },
+    "scoring_note": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "synthetic": {
+      "const": true
+    }
+  },
+  "required": [
+    "question_id",
+    "synthetic",
+    "embedding_allowed",
+    "label_status",
+    "response_mode",
+    "answer_reference",
+    "required_claims",
+    "forbidden_claims",
+    "evidence_requirements",
+    "numeric_checks",
+    "scoring_note"
+  ],
+  "type": "object"
+}

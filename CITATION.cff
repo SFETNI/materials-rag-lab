@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, cite this repository and cite the companion
+  dataset separately using DOI 10.5281/zenodo.22837229.
+title: "Materials RAG Lab: From Vanilla RAG to Agentic R&D"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Elfetni
+    given-names: Seifallah
+repository-code: "https://github.com/SFETNI/materials-rag-lab"
+license: Apache-2.0
+keywords:
+  - retrieval-augmented generation
+  - agentic RAG
+  - materials science
+  - additive manufacturing
+  - IN718
+  - information retrieval
+references:
+  - type: dataset
+    title: "Materials RAG Lab Dataset: IN718 Additive-Manufacturing Evidence and Benchmark for Progressive RAG"
+    version: 0.1.0
+    doi: 10.5281/zenodo.22837229
+    authors:
+      - family-names: Elfetni
+        given-names: Seifallah

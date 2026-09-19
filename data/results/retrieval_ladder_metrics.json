@@ -1,0 +1,133 @@
+{
+  "adaptive_corrective": {
+    "adaptive_dev": {
+      "hit@1": 0.5277777777777778,
+      "hit@10": 0.9722222222222222,
+      "hit@3": 0.6666666666666666,
+      "hit@5": 0.8333333333333334,
+      "mrr": 0.6487874779541447,
+      "ndcg@10": 0.6049320144144291,
+      "recall@1": 0.2592592592592593,
+      "recall@10": 0.7824074074074074,
+      "recall@3": 0.4398148148148148,
+      "recall@5": 0.5856481481481481
+    },
+    "corrective_runtime": {
+      "correction_rate": 0.16176470588235295,
+      "correction_strategy_counts": {
+        "DECOMPOSITION": 0,
+        "HYBRID": 7,
+        "MULTI_QUERY": 4
+      },
+      "decomposition_corrections": 0,
+      "hybrid_corrections": 7,
+      "initially_needs_correction": 11,
+      "initially_sufficient": 57,
+      "mean_final_evidence_items_selected": 2.823529411764706,
+      "mean_retrieval_strategies_per_question": 1.161764705882353,
+      "multi_query_corrections": 4,
+      "resolved_after_correction": 0,
+      "still_insufficient_with_residual": 11,
+      "total_retrieval_queries_implied": 199
+    }
+  },
+  "note": "Retrieval-only ladder metrics are not answer-level metrics; answer-level metrics begin with Phase 10C/10D.",
+  "schema_version": "1.0",
+  "scope": "frozen synthetic benchmark retrieval ladder",
+  "source": {
+    "path": "data/processed/phase10d/official_run_v2/rag_ladder_summary.json",
+    "sha256": "cae48bf8eebe3c22fc4cae15d9a416305c050587d3f52dd9e7cd422cea64f50a"
+  },
+  "systems": [
+    {
+      "decomposition_hybrid": 0.5769230769230769,
+      "dense": 0.5192307692307693,
+      "dense_cross_encoder": 0.5,
+      "hybrid_rrf": 0.5384615384615384,
+      "hybrid_rrf_cross_encoder": 0.46153846153846156,
+      "metric": "hit@1",
+      "multi_query_hybrid": 0.5576923076923077
+    },
+    {
+      "decomposition_hybrid": 0.75,
+      "dense": 0.7307692307692307,
+      "dense_cross_encoder": 0.8461538461538461,
+      "hybrid_rrf": 0.8076923076923077,
+      "hybrid_rrf_cross_encoder": 0.8269230769230769,
+      "metric": "hit@3",
+      "multi_query_hybrid": 0.8269230769230769
+    },
+    {
+      "decomposition_hybrid": 0.8846153846153846,
+      "dense": 0.7884615384615384,
+      "dense_cross_encoder": 0.8846153846153846,
+      "hybrid_rrf": 0.9230769230769231,
+      "hybrid_rrf_cross_encoder": 0.8653846153846154,
+      "metric": "hit@5",
+      "multi_query_hybrid": 0.8653846153846154
+    },
+    {
+      "decomposition_hybrid": 0.9807692307692307,
+      "dense": 0.8846153846153846,
+      "dense_cross_encoder": 0.9807692307692307,
+      "hybrid_rrf": 1.0,
+      "hybrid_rrf_cross_encoder": 0.9615384615384616,
+      "metric": "hit@10",
+      "multi_query_hybrid": 1.0
+    },
+    {
+      "decomposition_hybrid": 0.2948717948717949,
+      "dense": 0.25641025641025644,
+      "dense_cross_encoder": 0.24839743589743588,
+      "hybrid_rrf": 0.27564102564102566,
+      "hybrid_rrf_cross_encoder": 0.22916666666666666,
+      "metric": "recall@1",
+      "multi_query_hybrid": 0.27724358974358976
+    },
+    {
+      "decomposition_hybrid": 0.48717948717948717,
+      "dense": 0.483974358974359,
+      "dense_cross_encoder": 0.5208333333333333,
+      "hybrid_rrf": 0.5144230769230769,
+      "hybrid_rrf_cross_encoder": 0.5064102564102564,
+      "metric": "recall@3",
+      "multi_query_hybrid": 0.5544871794871795
+    },
+    {
+      "decomposition_hybrid": 0.6233974358974359,
+      "dense": 0.5625,
+      "dense_cross_encoder": 0.6153846153846154,
+      "hybrid_rrf": 0.6634615384615384,
+      "hybrid_rrf_cross_encoder": 0.5961538461538461,
+      "metric": "recall@5",
+      "multi_query_hybrid": 0.6442307692307693
+    },
+    {
+      "decomposition_hybrid": 0.8076923076923077,
+      "dense": 0.6987179487179488,
+      "dense_cross_encoder": 0.7387820512820512,
+      "hybrid_rrf": 0.8317307692307693,
+      "hybrid_rrf_cross_encoder": 0.719551282051282,
+      "metric": "recall@10",
+      "multi_query_hybrid": 0.8397435897435896
+    },
+    {
+      "decomposition_hybrid": 0.7007631257631257,
+      "dense": 0.640193353654892,
+      "dense_cross_encoder": 0.6836850649350649,
+      "hybrid_rrf": 0.6894459706959707,
+      "hybrid_rrf_cross_encoder": 0.6539307914307914,
+      "metric": "mrr",
+      "multi_query_hybrid": 0.7120650183150183
+    },
+    {
+      "decomposition_hybrid": 0.6446523785784637,
+      "dense": 0.5665004101981151,
+      "dense_cross_encoder": 0.6029547743320534,
+      "hybrid_rrf": 0.6543268881820791,
+      "hybrid_rrf_cross_encoder": 0.578942060066964,
+      "metric": "ndcg@10",
+      "multi_query_hybrid": 0.6710893297075933
+    }
+  ]
+}

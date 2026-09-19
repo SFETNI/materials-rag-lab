@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "format": "date",
+      "type": "string"
+    },
+    "corpus_id": {
+      "const": "mrl_internal_in718_v1"
+    },
+    "embedding_allowed": {
+      "const": false
+    },
+    "intent_id": {
+      "pattern": "^SYN-INTENT-[0-9]{3}$",
+      "type": "string"
+    },
+    "question": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question_id": {
+      "pattern": "^SYNQ-[0-9]{3}-[AB]$",
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "dev",
+        "challenge"
+      ]
+    },
+    "study_id": {
+      "const": "SYN-IN718-FAT-01"
+    },
+    "synthetic": {
+      "const": true
+    },
+    "task_family": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "question_id",
+    "intent_id",
+    "split",
+    "task_family",
+    "question",
+    "as_of",
+    "synthetic",
+    "embedding_allowed",
+    "corpus_id",
+    "study_id"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,36 @@
+{
+  "budgets": {
+    "max_computation_actions": 2,
+    "max_orchestrator_decisions": 6,
+    "max_query_transform_calls": 2,
+    "max_retrieval_actions": 4
+  },
+  "historical_pyproject": {
+    "path": "data/reproducibility/pyproject.frozen.toml",
+    "sha256": "5083148fdfe4f135886bb3227047aef155a06e92a6906fe9d619f1e48ba72679"
+  },
+  "models": {
+    "embedding": {
+      "id": "BAAI/bge-base-en-v1.5",
+      "revision": "unresolved: the frozen dense manifest recorded the repository name rather than a commit hash"
+    },
+    "isolated_roles": {
+      "model": "gpt-5.5",
+      "reasoning_effort": "low",
+      "runtime": "local Codex CLI"
+    },
+    "reranker": {
+      "id": "BAAI/bge-reranker-base",
+      "revision": "2cfc18c9415c912f9d8155881c133215df768a70"
+    }
+  },
+  "release_environment_note": "The repository pyproject.toml is the supported public install environment. pyproject.frozen.toml is the exact historical project specification recorded by the experiment freeze.",
+  "retrieval": {
+    "bm25_top_k": 50,
+    "decomposition_second_stage_rrf_k": 60,
+    "dense_top_k": 50,
+    "multi_query_second_stage_rrf_k": 60,
+    "rrf_k": 60
+  },
+  "schema_version": "1.0"
+}

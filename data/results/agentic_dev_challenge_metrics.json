@@ -1,0 +1,5011 @@
+{
+  "challenge": {
+    "cost_report": {
+      "answer_evaluator_calls": 0,
+      "answer_writer_calls": 24,
+      "claim_drafter_calls": 24,
+      "computation_actions": 0,
+      "duplicate_action_rate": 0.0,
+      "mean_final_evidence_items": 2.7916666666666665,
+      "means": {
+        "decomposer_calls": 0.4166666666666667,
+        "duplicate_actions_rejected": 0.0,
+        "evidence_assessor_calls": 2.0,
+        "orchestrator_model_calls": 2.6666666666666665,
+        "query_rewriter_calls": 0.4166666666666667,
+        "retrieval_actions": 2.0,
+        "revision_checks": 0.2916666666666667,
+        "total_retrieved_candidates": 20.0
+      },
+      "percentage_requiring_more_than_one_retrieval_action": 0.375,
+      "percentage_solved_after_first_retrieval": 0.625,
+      "percentage_stopping_with_residual": 0.375,
+      "question_count": 24,
+      "scientific_analyst_calls": 0,
+      "total_role_calls_per_question": 7.666666666666667,
+      "totals": {
+        "decomposer_calls": 10,
+        "duplicate_actions_rejected": 0,
+        "evidence_assessor_calls": 48,
+        "orchestrator_model_calls": 64,
+        "query_rewriter_calls": 10,
+        "retrieval_actions": 48,
+        "revision_checks": 7,
+        "total_retrieved_candidates": 480
+      },
+      "verifier_calls": 24
+    },
+    "metrics": {
+      "cost_report": {
+        "answer_evaluator_calls": 0,
+        "answer_writer_calls": 24,
+        "claim_drafter_calls": 24,
+        "computation_actions": 0,
+        "duplicate_action_rate": 0.0,
+        "mean_final_evidence_items": 2.7916666666666665,
+        "means": {
+          "decomposer_calls": 0.4166666666666667,
+          "duplicate_actions_rejected": 0.0,
+          "evidence_assessor_calls": 2.0,
+          "orchestrator_model_calls": 2.6666666666666665,
+          "query_rewriter_calls": 0.4166666666666667,
+          "retrieval_actions": 2.0,
+          "revision_checks": 0.2916666666666667,
+          "total_retrieved_candidates": 20.0
+        },
+        "percentage_requiring_more_than_one_retrieval_action": 0.375,
+        "percentage_solved_after_first_retrieval": 0.625,
+        "percentage_stopping_with_residual": 0.375,
+        "question_count": 24,
+        "scientific_analyst_calls": 0,
+        "total_role_calls_per_question": 7.666666666666667,
+        "totals": {
+          "decomposer_calls": 10,
+          "duplicate_actions_rejected": 0,
+          "evidence_assessor_calls": 48,
+          "orchestrator_model_calls": 64,
+          "query_rewriter_calls": 10,
+          "retrieval_actions": 48,
+          "revision_checks": 7,
+          "total_retrieved_candidates": 480
+        },
+        "verifier_calls": 24
+      },
+      "evidence_quality": {
+        "candidate_discovery": {
+          "by_split": {
+            "challenge": {
+              "gold_recall@10": 0.8125,
+              "gold_recall@20": 0.8125,
+              "gold_recall@50": 0.8125
+            }
+          },
+          "definition": "Gold recall over the runtime candidate pool before final evidence selection; non-abstain denominator for aggregates.",
+          "overall_non_abstain": {
+            "gold_recall@10": 0.8125,
+            "gold_recall@20": 0.8125,
+            "gold_recall@50": 0.8125
+          },
+          "per_question": [
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-012-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-012-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-013-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-013-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-014-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-014-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-018-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-018-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 19,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-019-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 15,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-019-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 12,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-020-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 13,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-020-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 19,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-021-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 17,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-021-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 22,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.0,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-022-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 22,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-022-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 18,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-023-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "abstain",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-023-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-024-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-024-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-025-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-025-B",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-030-A",
+              "split": "challenge"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-030-B",
+              "split": "challenge"
+            }
+          ]
+        },
+        "hard_negative_diagnostics": {
+          "current_revision_evidence_retained_SYNQ_012_A": true,
+          "hard_negative_above_first_gold_count": 0,
+          "per_question": [
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-012-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-012-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-013-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-013-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-014-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-014-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-018-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-018-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-019-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-019-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-020-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-020-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": null,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-021-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": null,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-021-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": null,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-022-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-022-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-023-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-023-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-024-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-024-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-025-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-025-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-030-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-030-B",
+              "selected_hard_negative_ids": []
+            }
+          ],
+          "selected_hard_negative_count": 0,
+          "superseded_rca_selected_as_current_evidence_SYNQ_012_A": false
+        },
+        "selected_evidence_metrics": {
+          "by_split": {
+            "challenge": {
+              "hit@1": 0.875,
+              "hit@3": 1.0,
+              "hit@5": 1.0,
+              "mrr": 0.9375,
+              "ndcg@10": 0.8016091390426794,
+              "recall@1": 0.4583333333333333,
+              "recall@3": 0.7708333333333334,
+              "recall@5": 0.7916666666666666
+            }
+          },
+          "definitions": {
+            "hit@k": "1 when at least one gold chunk appears in top-k, else 0",
+            "mrr": "reciprocal rank of first gold chunk",
+            "ndcg@10": "binary relevance nDCG at rank 10",
+            "ordinary_metric_denominator": "non-abstain questions only",
+            "recall@k": "retrieved gold chunks in top-k divided by total gold chunks"
+          },
+          "hard_negative_analysis": {
+            "diagnostics": [
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-012-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-012-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-013-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-013-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-018-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-018-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-019-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-019-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-020-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-020-B"
+              },
+              {
+                "first_gold_rank": null,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-021-A"
+              },
+              {
+                "first_gold_rank": null,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-021-B"
+              },
+              {
+                "first_gold_rank": null,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-022-A"
+              },
+              {
+                "first_gold_rank": 2,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-022-B"
+              },
+              {
+                "first_gold_rank": 2,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-023-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-023-B"
+              },
+              {
+                "first_gold_rank": 2,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-030-A"
+              },
+              {
+                "first_gold_rank": 2,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-030-B"
+              }
+            ],
+            "gold_vs_hard_negative_win_rate": null,
+            "hard_negative_in_top5_count": 0,
+            "hard_negative_outranks_first_gold_count": 0,
+            "question_count": 18
+          },
+          "overall_non_abstain": {
+            "hit@1": 0.875,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.9375,
+            "ndcg@10": 0.8016091390426794,
+            "recall@1": 0.4583333333333333,
+            "recall@3": 0.7708333333333334,
+            "recall@5": 0.7916666666666666
+          },
+          "per_question": [
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-012-A",
+              "split": "challenge",
+              "task_family": "current_revision"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.9197207891481876,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-012-B",
+              "split": "challenge",
+              "task_family": "current_revision"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-013-A",
+              "split": "challenge",
+              "task_family": "historical_revision"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-013-B",
+              "split": "challenge",
+              "task_family": "historical_revision"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7039180890341347,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-014-A",
+              "split": "challenge",
+              "task_family": "causal_limits"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6713860725233041,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-014-B",
+              "split": "challenge",
+              "task_family": "causal_limits"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6131471927654584,
+                "recall@1": 0.5,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-018-A",
+              "split": "challenge",
+              "task_family": "false_premise"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6131471927654584,
+                "recall@1": 0.5,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-018-B",
+              "split": "challenge",
+              "task_family": "false_premise"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-019-A",
+              "split": "challenge",
+              "task_family": "missing_evidence"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-019-B",
+              "split": "challenge",
+              "task_family": "missing_evidence"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-020-A",
+              "split": "challenge",
+              "task_family": "false_premise"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-020-B",
+              "split": "challenge",
+              "task_family": "false_premise"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": null,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 0.0,
+                "hit@3": 0.0,
+                "hit@5": 0.0,
+                "mrr": 0.0,
+                "ndcg@10": 0.0,
+                "recall@1": 0.0,
+                "recall@10": 0.0,
+                "recall@3": 0.0,
+                "recall@5": 0.0
+              },
+              "question_id": "SYNQ-021-A",
+              "split": "challenge",
+              "task_family": "unanswerable"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": null,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 0.0,
+                "hit@3": 0.0,
+                "hit@5": 0.0,
+                "mrr": 0.0,
+                "ndcg@10": 0.0,
+                "recall@1": 0.0,
+                "recall@10": 0.0,
+                "recall@3": 0.0,
+                "recall@5": 0.0
+              },
+              "question_id": "SYNQ-021-B",
+              "split": "challenge",
+              "task_family": "unanswerable"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": null,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 0.0,
+                "hit@3": 0.0,
+                "hit@5": 0.0,
+                "mrr": 0.0,
+                "ndcg@10": 0.0,
+                "recall@1": 0.0,
+                "recall@10": 0.0,
+                "recall@3": 0.0,
+                "recall@5": 0.0
+              },
+              "question_id": "SYNQ-022-A",
+              "split": "challenge",
+              "task_family": "unanswerable"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.38685280723454163,
+                "recall@1": 0.0,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-022-B",
+              "split": "challenge",
+              "task_family": "unanswerable"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.2960819109658652,
+                "recall@1": 0.0,
+                "recall@10": 0.3333333333333333,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.3333333333333333
+              },
+              "question_id": "SYNQ-023-A",
+              "split": "challenge",
+              "task_family": "condition_applicability"
+            },
+            {
+              "answerability": "abstain",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-023-B",
+              "split": "challenge",
+              "task_family": "condition_applicability"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-024-A",
+              "split": "challenge",
+              "task_family": "quantity_semantics"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-024-B",
+              "split": "challenge",
+              "task_family": "quantity_semantics"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-025-A",
+              "split": "challenge",
+              "task_family": "censoring_comparison"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-025-B",
+              "split": "challenge",
+              "task_family": "censoring_comparison"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.38685280723454163,
+                "recall@1": 0.0,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-030-A",
+              "split": "challenge",
+              "task_family": "temporal_causality"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.38685280723454163,
+                "recall@1": 0.0,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-030-B",
+              "split": "challenge",
+              "task_family": "temporal_causality"
+            }
+          ]
+        }
+      },
+      "final_answer_behavior": {
+        "answer_evaluation_distributions": {
+          "abstention": {
+            "APPROPRIATE": 7,
+            "INAPPROPRIATE": 3,
+            "NOT_APPLICABLE": 14
+          },
+          "completeness": {
+            "0": 8,
+            "1": 8,
+            "2": 8
+          },
+          "correctness": {
+            "0": 8,
+            "1": 8,
+            "2": 8
+          },
+          "groundedness": {
+            "2": 24
+          }
+        },
+        "answer_evaluation_means": {
+          "completeness": 1.0,
+          "correctness": 1.0,
+          "groundedness": 2.0
+        },
+        "answerability_matrix": {
+          "abstention_precision": 0.7,
+          "answerability_precision": 0.9285714285714286,
+          "answerability_recall": 0.8125,
+          "counts": {
+            "false_abstention": 3,
+            "false_answer": 1,
+            "true_abstention": 7,
+            "true_answer": 13
+          }
+        },
+        "citation_coverage_mean": 1.7083333333333333,
+        "citation_validity_rate": 1.0,
+        "residual_or_limitation_count": 14,
+        "sufficiency_diagnostics": {
+          "counts": {
+            "false_insufficient": 3,
+            "false_sufficient": 1,
+            "true_insufficient": 7,
+            "true_sufficient": 13
+          },
+          "label": "OFFLINE benchmark evaluation only; not used at runtime.",
+          "per_question": [
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-012-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-012-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-013-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-013-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-014-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-014-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-018-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-018-B"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-019-A"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-019-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-020-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-020-B"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-021-A"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-021-B"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-022-A"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "false_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-022-B"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-023-A"
+            },
+            {
+              "benchmark_answerable": false,
+              "diagnostic_bucket": "true_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-023-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-024-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-024-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-025-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-025-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-030-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-030-B"
+            }
+          ],
+          "residual_detection_precision": 0.875,
+          "sufficiency_precision": 0.9285714285714286,
+          "sufficiency_recall": 0.8125
+        },
+        "total_citations": 41,
+        "unsupported_citation_count": 0,
+        "unsupported_factual_claim_rate": 0.0
+      },
+      "findings": {
+        "case_studies": {
+          "difficult_or_incorrect": [
+            "SYNQ-014-A"
+          ],
+          "multi_action_retrieval": [
+            "SYNQ-019-A"
+          ],
+          "one_action_success": [
+            "SYNQ-012-A"
+          ],
+          "residual_or_abstention": [
+            "SYNQ-012-B"
+          ],
+          "revision_sensitive": [
+            "SYNQ-012-B"
+          ],
+          "verifier_rejected_claim": [
+            "SYNQ-014-B"
+          ]
+        },
+        "findings": {
+          "incorrect_count": 8,
+          "multi_action_count": 9,
+          "residual_count": 14,
+          "simple_hybrid_sufficient_count": 9,
+          "verifier_rejected_claim_count": 6
+        },
+        "observable_cases": {
+          "SYNQ-012-A": {
+            "actions": [
+              {
+                "action": "HYBRID_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "B017 poor fatigue performance approved primary contributor as of 2025-05-01",
+                  "result_count": 10,
+                  "tool": "HYBRID_SEARCH"
+                },
+                "query": "B017 poor fatigue performance approved primary contributor as of 2025-05-01",
+                "reason": "No evidence ledger is available; targeted lookup needed for B017 fatigue contributor and approval status/date."
+              }
+            ],
+            "final_answer": "Evidence identifying the current approved technical conclusion as of 2025-05-01 and superseding earlier RCA-B017-004 findings — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Revision decision ## Revision decision Revision 2 supersedes [RCA-B017-004](RCA-B017-004.md) from 2025-04-18 and is the current approved technical conclusion at the 2025-05-01 snapshot. Approval concerns this bounded inves... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0] Evidence stating the approved primary supported contributor to reduced B017 fatigue life — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Supported conclusion and remaining uncertainty ## Supported conclusion and remaining uncertainty Near-surface, surface-connected lack-of-fusion features are the primary supported contributor to reduced B017 fatigue life in... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0] Evidence that B017 had poor or reduced fatigue performance requiring explanation — Document: Non-conformance 004 — B017 pilot fatigue shortfall Document type: non_conformance_report Build: B017 Section: Record identity and trigger ## Record identity and trigger Case NCR-B017-004 was opened on 2025-03-10 after review of the completed pilot fatigue reports. It concerns build B017 in study SYN-IN718-FAT-01. This controlled record captures... [chunk|document_mrl_internal_in718_v1_NCR-B017-004|scope|0]",
+            "offline_evaluation": {
+              "abstention": "NOT_APPLICABLE",
+              "completeness": 1,
+              "concise_reason": "Deterministic lexical reference check; semantic LLM judging prompt is versioned separately.",
+              "correctness": 1,
+              "groundedness": 2,
+              "matched_required_claims": 1,
+              "question_id": "SYNQ-012-A",
+              "required_claim_count": 3
+            },
+            "question": "As of 2025-05-01, what is the approved primary contributor to B017’s poor fatigue performance?",
+            "requirements": [
+              {
+                "description": "Evidence identifying the current approved technical conclusion as of 2025-05-01 and superseding earlier RCA-B017-004 findings",
+                "requirement_id": "R1",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0"
+                ]
+              },
+              {
+                "description": "Evidence stating the approved primary supported contributor to reduced B017 fatigue life",
+                "requirement_id": "R2",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0"
+                ]
+              },
+              {
+                "description": "Evidence that B017 had poor or reduced fatigue performance requiring explanation",
+                "requirement_id": "R3",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_NCR-B017-004|scope|0"
+                ]
+              }
+            ],
+            "verification_dispositions": [
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED"
+            ]
+          },
+          "SYNQ-012-B": {
+            "actions": [
+              {
+                "action": "MULTI_QUERY_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "B017 investigation current conclusion superseded powder hypothesis",
+                  "result_count": 10,
+                  "rewrite_count": 3,
+                  "tool": "MULTI_QUERY_SEARCH"
+                },
+                "query": "B017 investigation current conclusion superseded powder hypothesis",
+                "reason": "No evidence ledger exists; need current conclusion and distinction from superseded powder hypothesis."
+              }
+            ],
+            "final_answer": "Identify which investigation record is current and which powder-contamination hypothesis is superseded. — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Revision decision ## Revision decision Revision 2 supersedes [RCA-B017-004](RCA-B017-004.md) from 2025-04-18 and is the current approved technical conclusion at the 2025-05-01 snapshot. Approval concerns this bounded inves... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0] Provide the current approved B017 investigation conclusion. — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Supported conclusion and remaining uncertainty ## Supported conclusion and remaining uncertainty Near-surface, surface-connected lack-of-fusion features are the primary supported contributor to reduced B017 fatigue life in... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0] Support that subsequent evidence did not support powder contamination as the primary cause. — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Revision decision ## Revision decision Revision 2 supersedes [RCA-B017-004](RCA-B017-004.md) from 2025-04-18 and is the current approved technical conclusion at the 2025-05-01 snapshot. Approval concerns this bounded inves... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0] Support that subsequent evidence did not support powder contamination as the primary cause. — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: New retained-material checks ## New retained-material checks The following fictional bulk check was completed on 2025-03-28 and is recorded here as the supplied evidence. No separate laboratory certificate is included. | S... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|chemistry|0] Capture relevant current limitations or unresolved decisions so the conclusion is not overstated. — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Supported conclusion and remaining uncertainty ## Supported conclusion and remaining uncertainty Near-surface, surface-connected lack-of-fusion features are the primary supported contributor to reduced B017 fatigue life in... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0] Residual: Some requested components remain unresolved from the supplied evidence.",
+            "offline_evaluation": {
+              "abstention": "NOT_APPLICABLE",
+              "completeness": 1,
+              "concise_reason": "Deterministic lexical reference check; semantic LLM judging prompt is versioned separately.",
+              "correctness": 1,
+              "groundedness": 2,
+              "matched_required_claims": 1,
+              "question_id": "SYNQ-012-B",
+              "required_claim_count": 3
+            },
+            "question": "Give the current B017 investigation conclusion, not the superseded powder hypothesis.",
+            "requirements": [
+              {
+                "description": "Identify which investigation record is current and which powder-contamination hypothesis is superseded.",
+                "requirement_id": "R1",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004|status|0"
+                ]
+              },
+              {
+                "description": "Provide the current approved B017 investigation conclusion.",
+                "requirement_id": "R2",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0"
+                ]
+              },
+              {
+                "description": "Support that subsequent evidence did not support powder contamination as the primary cause.",
+                "requirement_id": "R3",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|chemistry|0"
+                ]
+              },
+              {
+                "description": "Capture relevant current limitations or unresolved decisions so the conclusion is not overstated.",
+                "requirement_id": "R4",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|actions|0"
+                ]
+              }
+            ],
+            "verification_dispositions": [
+              "SUPPORTED",
+              "SUPERSEDED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED"
+            ]
+          },
+          "SYNQ-014-A": {
+            "actions": [
+              {
+                "action": "HYBRID_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "layer 842 B017 fatigue failure investigation causation every failure",
+                  "result_count": 10,
+                  "tool": "HYBRID_SEARCH"
+                },
+                "query": "layer 842 B017 fatigue failure investigation causation every failure",
+                "reason": "No evidence ledger exists yet; need direct evidence on whether investigation links layer 842 to all B017 fatigue failures."
+              }
+            ],
+            "final_answer": "Current approved investigation conclusion about supported cause and limits of proof — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Supported conclusion and remaining uncertainty ## Supported conclusion and remaining uncertainty Near-surface, surface-connected lack-of-fusion features are the primary supported contributor to reduced B017 fatigue life in... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0] Current approved investigation conclusion about supported cause and limits of proof — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Revision decision ## Revision decision Revision 2 supersedes [RCA-B017-004](RCA-B017-004.md) from 2025-04-18 and is the current approved technical conclusion at the 2025-05-01 snapshot. Approval concerns this bounded inves... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0] Evidence about layer 842 interruption and whether it is registered to fracture origins — Document: Build B017 — manufacturing history and witness inspection Document type: build_record Build: B017 Section: Process history and deviations ## Process history and deviations At layer 842, a recoater torque alert paused exposure for 74 seconds. At layer 845, a scan-controller restart interrupted the job for 91 seconds. The operator resumed both eve... [chunk|document_mrl_internal_in718_v1_BUILD-B017|events|0] Evidence about layer 842 interruption and whether it is registered to fracture origins — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Evidence synthesis ## Evidence synthesis [FAT-B017](FAT-B017.md#assessment) gives a median of 123000 cycles for its four 600 MPa failures; [FAT-B021](FAT-B021.md#assessment) gives 487500 cycles under the same nominal axial... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|evidence|0] Evidence addressing whether every B017 fatigue failure was proven to have the same layer-specific cause — Document: B017 fatigue investigation — revised evidence-based conclusion Document type: root_cause_analysis Build: B017, B021 Section: Supported conclusion and remaining uncertainty ## Supported conclusion and remaining uncertainty Near-surface, surface-connected lack-of-fusion features are the primary supported contributor to reduced B017 fatigue life in... [chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0]",
+            "offline_evaluation": {
+              "abstention": "NOT_APPLICABLE",
+              "completeness": 0,
+              "concise_reason": "Deterministic lexical reference check; semantic LLM judging prompt is versioned separately.",
+              "correctness": 0,
+              "groundedness": 2,
+              "matched_required_claims": 0,
+              "question_id": "SYNQ-014-A",
+              "required_claim_count": 2
+            },
+            "question": "Does the investigation prove that layer 842 caused every B017 fatigue failure?",
+            "requirements": [
+              {
+                "description": "Current approved investigation conclusion about supported cause and limits of proof",
+                "requirement_id": "R1",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|status|0"
+                ]
+              },
+              {
+                "description": "Evidence about layer 842 interruption and whether it is registered to fracture origins",
+                "requirement_id": "R2",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_BUILD-B017|events|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|evidence|0"
+                ]
+              },
+              {
+                "description": "Evidence addressing whether every B017 fatigue failure was proven to have the same layer-specific cause",
+                "requirement_id": "R3",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0",
+                  "chunk|document_mrl_internal_in718_v1_FRACT-B017|limits|0"
+                ]
+              }
+            ],
+            "verification_dispositions": [
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED",
+              "SUPPORTED"
+            ]
+          },
+          "SYNQ-014-B": {
+            "actions": [
+              {
+                "action": "HYBRID_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "\"74-second pause\" \"defect-generation event\" record",
+                  "result_count": 10,
+                  "tool": "HYBRID_SEARCH"
+                },
+                "query": "\"74-second pause\" \"defect-generation event\" record",
+                "reason": "No evidence ledger is available; retrieve records mentioning the 74-second pause and defect-generation event."
+              }
+            ],
+            "final_answer": "I cannot answer this from the supplied verified evidence.",
+            "offline_evaluation": {
+              "abstention": "INAPPROPRIATE",
+              "completeness": 0,
+              "concise_reason": "Deterministic lexical reference check; semantic LLM judging prompt is versioned separately.",
+              "correctness": 0,
+              "groundedness": 2,
+              "matched_required_claims": 0,
+              "question_id": "SYNQ-014-B",
+              "required_claim_count": 2
+            },
+            "question": "Can the record assign a unique defect-generation event to the 74-second pause?",
+            "requirements": [
+              {
+                "description": "Evidence that the 74-second pause occurred and was a process deviation requiring review",
+                "requirement_id": "R1",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_BUILD-B017|events|0",
+                  "chunk|document_mrl_internal_in718_v1_PROC-LPBF-001|restart|0"
+                ]
+              },
+              {
+                "description": "Evidence about whether the pause can be uniquely tied to a later defect or fracture origin",
+                "requirement_id": "R2",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_PROC-LPBF-001|restart|0",
+                  "chunk|document_mrl_internal_in718_v1_FRACT-B017|observations|0",
+                  "chunk|document_mrl_internal_in718_v1_RCA-B017-004-rev2|conclusion|0"
+                ]
+              }
+            ],
+            "verification_dispositions": [
+              "UNVERIFIED",
+              "UNVERIFIED",
+              "UNVERIFIED",
+              "UNVERIFIED"
+            ]
+          },
+          "SYNQ-019-A": {
+            "actions": [
+              {
+                "action": "DECOMPOSITION_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "decomposable": true,
+                  "query": "B017 HIP hold thermocouple temperature records hold interval thermocouple-to-thermocouple differences",
+                  "result_count": 10,
+                  "subquery_count": 2,
+                  "tool": "DECOMPOSITION_SEARCH"
+                },
+                "query": "B017 HIP hold thermocouple temperature records hold interval thermocouple-to-thermocouple differences",
+                "reason": "The question requires both the B017 HIP hold interval and thermocouple temperature records to support a calculated maximum difference."
+              },
+              {
+                "action": "MULTI_QUERY_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "B017 HIP hold thermocouple readings TC temperature trace soak hold maximum delta",
+                  "result_count": 10,
+                  "rewrite_count": 3,
+                  "tool": "MULTI_QUERY_SEARCH"
+                },
+                "query": "B017 HIP hold thermocouple readings TC temperature trace soak hold maximum delta",
+                "reason": "R1 remains missing; search variant terminology for per-thermocouple hold readings or traces needed to compute the maximum difference."
+              },
+              {
+                "action": "HYBRID_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "HT-B017 B017 HIP thermocouple log per thermocouple temperature readings hold window",
+                  "result_count": 10,
+                  "tool": "HYBRID_SEARCH"
+                },
+                "query": "HT-B017 B017 HIP thermocouple log per thermocouple temperature readings hold window",
+                "reason": "R1 remains missing; target the specific B017 document family and per-thermocouple log terminology for hold-window readings."
+              },
+              {
+                "action": "HYBRID_SEARCH",
+                "document_id": "",
+                "objective": "",
+                "observation": {
+                  "query": "B017 HIP raw thermocouple data historian CSV continuous temperature trace hold",
+                  "result_count": 10,
+                  "tool": "HYBRID_SEARCH"
+                },
+                "query": "B017 HIP raw thermocouple data historian CSV continuous temperature trace hold",
+                "reason": "R1 remains missing; target raw historian or CSV trace terminology for continuous per-thermocouple hold readings."
+              }
+            ],
+            "final_answer": "I cannot answer this from the supplied verified evidence.",
+            "offline_evaluation": {
+              "abstention": "APPROPRIATE",
+              "completeness": 2,
+              "concise_reason": "Deterministic lexical reference check; semantic LLM judging prompt is versioned separately.",
+              "correctness": 2,
+              "groundedness": 2,
+              "matched_required_claims": 0,
+              "question_id": "SYNQ-019-A",
+              "required_claim_count": 2
+            },
+            "question": "Calculate the largest thermocouple-to-thermocouple difference during the B017 HIP hold.",
+            "requirements": [
+              {
+                "description": "Evidence identifying B017 HIP hold thermocouple-specific readings or time-resolved thermocouple differences needed to calculate the largest thermocouple-to-thermocouple difference during the hold.",
+                "requirement_id": "R1",
+                "status": "MISSING",
+                "supporting_context_ids": []
+              },
+              {
+                "description": "Evidence confirming that aggregate B017 HIP hold temperature minimum, mean and maximum values are insufficient to reconstruct thermocouple-to-thermocouple differences.",
+                "requirement_id": "R2",
+                "status": "SUPPORTED",
+                "supporting_context_ids": [
+                  "chunk|document_mrl_internal_in718_v1_HT-B017|readback|0"
+                ]
+              }
+            ],
+            "verification_dispositions": [
+              "SUPPORTED",
+              "UNVERIFIED"
+            ]
+          }
+        },
+        "selection_criteria": "Deterministic first question ID by category after runtime and offline evaluation are frozen."
+      },
+      "pre_run_freeze_verification": {
+        "aborted_role_outputs_reused": false,
+        "challenge_output_count_before_run": 0,
+        "challenge_question_count": 24,
+        "mismatches": [],
+        "original_freeze_sha256": "6e324ad97ad5c06357348afd642501dd354e95f124d9ff0f60a1c7717dc8c52c",
+        "refreeze_path": "data/processed/manifests/phase_10c_dev_refreeze_v2.json",
+        "refreeze_sha256": "bf5b9efc4688d9496792aded2ab749ca56373a963231ccb2896fad03d90a587e",
+        "status": "pass",
+        "test_isolation_proven": true
+      },
+      "question_count": 24,
+      "verification": {
+        "claim_count": 84,
+        "disposition_counts": {
+          "SUPERSEDED": 1,
+          "SUPPORTED": 68,
+          "UNVERIFIED": 15
+        },
+        "numerical_receipt_consistency": true,
+        "overall_verification_counts": {
+          "NOT_ANSWERABLE_FROM_EVIDENCE": 3,
+          "VERIFIED": 10,
+          "VERIFIED_WITH_RESIDUAL": 11
+        },
+        "superseded_as_current_violations": 1,
+        "unsupported_claim_rate": 0.17857142857142858
+      }
+    },
+    "n": 24
+  },
+  "challenge_evidence_quality": {
+    "candidate_discovery": {
+      "by_split": {
+        "challenge": {
+          "gold_recall@10": 0.8125,
+          "gold_recall@20": 0.8125,
+          "gold_recall@50": 0.8125
+        }
+      },
+      "definition": "Gold recall over the runtime candidate pool before final evidence selection; non-abstain denominator for aggregates.",
+      "overall_non_abstain": {
+        "gold_recall@10": 0.8125,
+        "gold_recall@20": 0.8125,
+        "gold_recall@50": 0.8125
+      },
+      "per_question": [
+        {
+          "answerability": "answer",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-012-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "answer",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-012-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "answer",
+          "candidate_count": 10,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-013-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "answer",
+          "candidate_count": 10,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 0.6666666666666666,
+            "gold_recall@20": 0.6666666666666666,
+            "gold_recall@50": 0.6666666666666666
+          },
+          "question_id": "SYNQ-013-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 0.6666666666666666,
+            "gold_recall@20": 0.6666666666666666,
+            "gold_recall@50": 0.6666666666666666
+          },
+          "question_id": "SYNQ-014-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 0.6666666666666666,
+            "gold_recall@20": 0.6666666666666666,
+            "gold_recall@50": 0.6666666666666666
+          },
+          "question_id": "SYNQ-014-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.5,
+            "gold_recall@20": 0.5,
+            "gold_recall@50": 0.5
+          },
+          "question_id": "SYNQ-018-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.5,
+            "gold_recall@20": 0.5,
+            "gold_recall@50": 0.5
+          },
+          "question_id": "SYNQ-018-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 19,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-019-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 15,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-019-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 12,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-020-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 13,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-020-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 19,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-021-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 17,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-021-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 22,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.0,
+            "gold_recall@20": 0.5,
+            "gold_recall@50": 0.5
+          },
+          "question_id": "SYNQ-022-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 22,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.5,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-022-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 18,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-023-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "abstain",
+          "candidate_count": 10,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-023-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-024-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-024-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-025-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 1.0,
+            "gold_recall@20": 1.0,
+            "gold_recall@50": 1.0
+          },
+          "question_id": "SYNQ-025-B",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.5,
+            "gold_recall@20": 0.5,
+            "gold_recall@50": 0.5
+          },
+          "question_id": "SYNQ-030-A",
+          "split": "challenge"
+        },
+        {
+          "answerability": "correct_premise",
+          "candidate_count": 10,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "gold_recall@10": 0.5,
+            "gold_recall@20": 0.5,
+            "gold_recall@50": 0.5
+          },
+          "question_id": "SYNQ-030-B",
+          "split": "challenge"
+        }
+      ]
+    },
+    "hard_negative_diagnostics": {
+      "current_revision_evidence_retained_SYNQ_012_A": true,
+      "hard_negative_above_first_gold_count": 0,
+      "per_question": [
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-012-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-012-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-013-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-013-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-014-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-014-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-018-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-018-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-019-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-019-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-020-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-020-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": null,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-021-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": null,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-021-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": null,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-022-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 2,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-022-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 2,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-023-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-023-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-024-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-024-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-025-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 1,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-025-B",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 2,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-030-A",
+          "selected_hard_negative_ids": []
+        },
+        {
+          "first_gold_selected_rank": 2,
+          "first_hard_negative_selected_rank": null,
+          "hard_negative_selected_above_first_gold": false,
+          "question_id": "SYNQ-030-B",
+          "selected_hard_negative_ids": []
+        }
+      ],
+      "selected_hard_negative_count": 0,
+      "superseded_rca_selected_as_current_evidence_SYNQ_012_A": false
+    },
+    "selected_evidence_metrics": {
+      "by_split": {
+        "challenge": {
+          "hit@1": 0.875,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr": 0.9375,
+          "ndcg@10": 0.8016091390426794,
+          "recall@1": 0.4583333333333333,
+          "recall@3": 0.7708333333333334,
+          "recall@5": 0.7916666666666666
+        }
+      },
+      "definitions": {
+        "hit@k": "1 when at least one gold chunk appears in top-k, else 0",
+        "mrr": "reciprocal rank of first gold chunk",
+        "ndcg@10": "binary relevance nDCG at rank 10",
+        "ordinary_metric_denominator": "non-abstain questions only",
+        "recall@k": "retrieved gold chunks in top-k divided by total gold chunks"
+      },
+      "hard_negative_analysis": {
+        "diagnostics": [
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-012-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-012-B"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-013-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-013-B"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-018-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-018-B"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-019-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-019-B"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-020-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-020-B"
+          },
+          {
+            "first_gold_rank": null,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-021-A"
+          },
+          {
+            "first_gold_rank": null,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-021-B"
+          },
+          {
+            "first_gold_rank": null,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-022-A"
+          },
+          {
+            "first_gold_rank": 2,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-022-B"
+          },
+          {
+            "first_gold_rank": 2,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-023-A"
+          },
+          {
+            "first_gold_rank": 1,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-023-B"
+          },
+          {
+            "first_gold_rank": 2,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-030-A"
+          },
+          {
+            "first_gold_rank": 2,
+            "first_hard_negative_rank": null,
+            "hard_negative_in_top5": false,
+            "hard_negative_outranks_first_gold": false,
+            "question_id": "SYNQ-030-B"
+          }
+        ],
+        "gold_vs_hard_negative_win_rate": null,
+        "hard_negative_in_top5_count": 0,
+        "hard_negative_outranks_first_gold_count": 0,
+        "question_count": 18
+      },
+      "overall_non_abstain": {
+        "hit@1": 0.875,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr": 0.9375,
+        "ndcg@10": 0.8016091390426794,
+        "recall@1": 0.4583333333333333,
+        "recall@3": 0.7708333333333334,
+        "recall@5": 0.7916666666666666
+      },
+      "per_question": [
+        {
+          "answerability": "answer",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-012-A",
+          "split": "challenge",
+          "task_family": "current_revision"
+        },
+        {
+          "answerability": "answer",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.9197207891481876,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-012-B",
+          "split": "challenge",
+          "task_family": "current_revision"
+        },
+        {
+          "answerability": "answer",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.7653606369886217,
+            "recall@1": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "recall@3": 0.6666666666666666,
+            "recall@5": 0.6666666666666666
+          },
+          "question_id": "SYNQ-013-A",
+          "split": "challenge",
+          "task_family": "historical_revision"
+        },
+        {
+          "answerability": "answer",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.7653606369886217,
+            "recall@1": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "recall@3": 0.6666666666666666,
+            "recall@5": 0.6666666666666666
+          },
+          "question_id": "SYNQ-013-B",
+          "split": "challenge",
+          "task_family": "historical_revision"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.7039180890341347,
+            "recall@1": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "recall@3": 0.6666666666666666,
+            "recall@5": 0.6666666666666666
+          },
+          "question_id": "SYNQ-014-A",
+          "split": "challenge",
+          "task_family": "causal_limits"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.6713860725233041,
+            "recall@1": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "recall@3": 0.3333333333333333,
+            "recall@5": 0.6666666666666666
+          },
+          "question_id": "SYNQ-014-B",
+          "split": "challenge",
+          "task_family": "causal_limits"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.6131471927654584,
+            "recall@1": 0.5,
+            "recall@10": 0.5,
+            "recall@3": 0.5,
+            "recall@5": 0.5
+          },
+          "question_id": "SYNQ-018-A",
+          "split": "challenge",
+          "task_family": "false_premise"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 0.6131471927654584,
+            "recall@1": 0.5,
+            "recall@10": 0.5,
+            "recall@3": 0.5,
+            "recall@5": 0.5
+          },
+          "question_id": "SYNQ-018-B",
+          "split": "challenge",
+          "task_family": "false_premise"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-019-A",
+          "split": "challenge",
+          "task_family": "missing_evidence"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-019-B",
+          "split": "challenge",
+          "task_family": "missing_evidence"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-020-A",
+          "split": "challenge",
+          "task_family": "false_premise"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-020-B",
+          "split": "challenge",
+          "task_family": "false_premise"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": null,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "ndcg@10": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0
+          },
+          "question_id": "SYNQ-021-A",
+          "split": "challenge",
+          "task_family": "unanswerable"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": null,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "ndcg@10": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0
+          },
+          "question_id": "SYNQ-021-B",
+          "split": "challenge",
+          "task_family": "unanswerable"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": null,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "ndcg@10": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0
+          },
+          "question_id": "SYNQ-022-A",
+          "split": "challenge",
+          "task_family": "unanswerable"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": 2,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.5,
+            "ndcg@10": 0.38685280723454163,
+            "recall@1": 0.0,
+            "recall@10": 0.5,
+            "recall@3": 0.5,
+            "recall@5": 0.5
+          },
+          "question_id": "SYNQ-022-B",
+          "split": "challenge",
+          "task_family": "unanswerable"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": 2,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.5,
+            "ndcg@10": 0.2960819109658652,
+            "recall@1": 0.0,
+            "recall@10": 0.3333333333333333,
+            "recall@3": 0.3333333333333333,
+            "recall@5": 0.3333333333333333
+          },
+          "question_id": "SYNQ-023-A",
+          "split": "challenge",
+          "task_family": "condition_applicability"
+        },
+        {
+          "answerability": "abstain",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 3,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.3333333333333333,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-023-B",
+          "split": "challenge",
+          "task_family": "condition_applicability"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-024-A",
+          "split": "challenge",
+          "task_family": "quantity_semantics"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 1,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-024-B",
+          "split": "challenge",
+          "task_family": "quantity_semantics"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-025-A",
+          "split": "challenge",
+          "task_family": "censoring_comparison"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 1,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "ndcg@10": 1.0,
+            "recall@1": 0.5,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0
+          },
+          "question_id": "SYNQ-025-B",
+          "split": "challenge",
+          "task_family": "censoring_comparison"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 2,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.5,
+            "ndcg@10": 0.38685280723454163,
+            "recall@1": 0.0,
+            "recall@10": 0.5,
+            "recall@3": 0.5,
+            "recall@5": 0.5
+          },
+          "question_id": "SYNQ-030-A",
+          "split": "challenge",
+          "task_family": "temporal_causality"
+        },
+        {
+          "answerability": "correct_premise",
+          "first_gold_rank": 2,
+          "gold_chunk_count": 2,
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@10": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.5,
+            "ndcg@10": 0.38685280723454163,
+            "recall@1": 0.0,
+            "recall@10": 0.5,
+            "recall@3": 0.5,
+            "recall@5": 0.5
+          },
+          "question_id": "SYNQ-030-B",
+          "split": "challenge",
+          "task_family": "temporal_causality"
+        }
+      ]
+    }
+  },
+  "challenge_final_answer_behavior": {
+    "answer_evaluation_distributions": {
+      "abstention": {
+        "APPROPRIATE": 7,
+        "INAPPROPRIATE": 3,
+        "NOT_APPLICABLE": 14
+      },
+      "completeness": {
+        "0": 8,
+        "1": 8,
+        "2": 8
+      },
+      "correctness": {
+        "0": 8,
+        "1": 8,
+        "2": 8
+      },
+      "groundedness": {
+        "2": 24
+      }
+    },
+    "answer_evaluation_means": {
+      "completeness": 1.0,
+      "correctness": 1.0,
+      "groundedness": 2.0
+    },
+    "answerability_matrix": {
+      "abstention_precision": 0.7,
+      "answerability_precision": 0.9285714285714286,
+      "answerability_recall": 0.8125,
+      "counts": {
+        "false_abstention": 3,
+        "false_answer": 1,
+        "true_abstention": 7,
+        "true_answer": 13
+      }
+    },
+    "citation_coverage_mean": 1.7083333333333333,
+    "citation_validity_rate": 1.0,
+    "residual_or_limitation_count": 14,
+    "sufficiency_diagnostics": {
+      "counts": {
+        "false_insufficient": 3,
+        "false_sufficient": 1,
+        "true_insufficient": 7,
+        "true_sufficient": 13
+      },
+      "label": "OFFLINE benchmark evaluation only; not used at runtime.",
+      "per_question": [
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-012-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-012-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-013-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-013-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-014-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "false_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-014-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-018-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-018-B"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-019-A"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-019-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-020-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "false_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-020-B"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-021-A"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-021-B"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-022-A"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "false_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-022-B"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-023-A"
+        },
+        {
+          "benchmark_answerable": false,
+          "diagnostic_bucket": "true_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-023-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-024-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-024-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "false_insufficient",
+          "final_runtime_sufficient": false,
+          "question_id": "SYNQ-025-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-025-B"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-030-A"
+        },
+        {
+          "benchmark_answerable": true,
+          "diagnostic_bucket": "true_sufficient",
+          "final_runtime_sufficient": true,
+          "question_id": "SYNQ-030-B"
+        }
+      ],
+      "residual_detection_precision": 0.875,
+      "sufficiency_precision": 0.9285714285714286,
+      "sufficiency_recall": 0.8125
+    },
+    "total_citations": 41,
+    "unsupported_citation_count": 0,
+    "unsupported_factual_claim_rate": 0.0
+  },
+  "challenge_verification": {
+    "claim_count": 84,
+    "disposition_counts": {
+      "SUPERSEDED": 1,
+      "SUPPORTED": 68,
+      "UNVERIFIED": 15
+    },
+    "numerical_receipt_consistency": true,
+    "overall_verification_counts": {
+      "NOT_ANSWERABLE_FROM_EVIDENCE": 3,
+      "VERIFIED": 10,
+      "VERIFIED_WITH_RESIDUAL": 11
+    },
+    "superseded_as_current_violations": 1,
+    "unsupported_claim_rate": 0.17857142857142858
+  },
+  "dev": {
+    "metrics": {
+      "baseline_generation_comparison": {
+        "hybrid_answer_metrics_available": false,
+        "note": "Earlier phases produced generation packets and selected evidence; complete DEV answer-level baseline outputs were not available, so no answer-level baseline metrics were fabricated.",
+        "phase9b_corrective_answer_metrics_available": false,
+        "vanilla_dense_answer_metrics_available": false
+      },
+      "challenge_questions_executed": 0,
+      "claim_verification": {
+        "claim_count": 143,
+        "disposition_counts": {
+          "SUPPORTED": 87,
+          "UNVERIFIED": 56
+        },
+        "numerical_receipt_consistency": true,
+        "overall_verification_counts": {
+          "NOT_ANSWERABLE_FROM_EVIDENCE": 12,
+          "VERIFIED": 17,
+          "VERIFIED_WITH_RESIDUAL": 7
+        },
+        "superseded_as_current_violations": 0,
+        "supported_claim_rate": 0.6083916083916084,
+        "unsupported_claim_rate": 0.3916083916083916
+      },
+      "cost_report": {
+        "answer_evaluator_calls": 0,
+        "answer_writer_calls": 36,
+        "claim_drafter_calls": 36,
+        "computation_actions": 0,
+        "decomposer_calls": 26,
+        "dev_question_count": 36,
+        "evidence_assessor_calls": 40,
+        "note": "Phase 10C role prompts are versioned; deterministic structured executors were used for reproducible DEV freeze metrics.",
+        "orchestrator_calls": 41,
+        "retrieval_actions": 40,
+        "rewriter_calls": 2,
+        "scientific_analyst_calls": 0,
+        "total_llm_role_calls": 81,
+        "verifier_calls": 36
+      },
+      "dev_question_count": 36,
+      "evidence_quality": {
+        "candidate_discovery": {
+          "by_split": {
+            "dev": {
+              "gold_recall@10": 0.849537037037037,
+              "gold_recall@20": 0.8634259259259259,
+              "gold_recall@50": 0.8634259259259259
+            }
+          },
+          "definition": "Gold recall over the runtime candidate pool before final evidence selection; non-abstain denominator for aggregates.",
+          "overall_non_abstain": {
+            "gold_recall@10": 0.849537037037037,
+            "gold_recall@20": 0.8634259259259259,
+            "gold_recall@50": 0.8634259259259259
+          },
+          "per_question": [
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-001-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-001-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-002-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-002-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-003-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-003-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 14,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-004-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-004-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.3333333333333333,
+                "gold_recall@20": 0.3333333333333333,
+                "gold_recall@50": 0.3333333333333333
+              },
+              "question_id": "SYNQ-005-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-005-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-006-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-006-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-007-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-007-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-008-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-008-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-009-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-009-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-010-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-010-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 24,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-011-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-011-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-015-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-015-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-016-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-016-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-017-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-017-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 0.75,
+                "gold_recall@20": 0.75,
+                "gold_recall@50": 0.75
+              },
+              "question_id": "SYNQ-026-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-026-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-027-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-027-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-028-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "correct_premise",
+              "candidate_count": 10,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "gold_recall@10": 0.5,
+                "gold_recall@20": 0.5,
+                "gold_recall@50": 0.5
+              },
+              "question_id": "SYNQ-028-B",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 0.6666666666666666,
+                "gold_recall@20": 0.6666666666666666,
+                "gold_recall@50": 0.6666666666666666
+              },
+              "question_id": "SYNQ-029-A",
+              "split": "dev"
+            },
+            {
+              "answerability": "answer",
+              "candidate_count": 10,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "gold_recall@10": 1.0,
+                "gold_recall@20": 1.0,
+                "gold_recall@50": 1.0
+              },
+              "question_id": "SYNQ-029-B",
+              "split": "dev"
+            }
+          ]
+        },
+        "hard_negative_diagnostics": {
+          "current_revision_evidence_retained_SYNQ_012_A": false,
+          "hard_negative_above_first_gold_count": 0,
+          "per_question": [
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-001-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-001-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-002-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-002-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-003-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-003-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-004-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-004-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-005-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-005-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-006-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-006-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-007-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-007-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-008-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-008-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-009-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-009-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-010-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": null,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-010-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 2,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-011-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-011-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-015-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 3,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-015-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-016-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-016-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-017-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-017-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 4,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-026-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": null,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-026-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-027-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": 5,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-027-B",
+              "selected_hard_negative_ids": [
+                "chunk|document_mrl_internal_in718_v1_NCR-B017-004|disposition|0"
+              ]
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-028-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-028-B",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-029-A",
+              "selected_hard_negative_ids": []
+            },
+            {
+              "first_gold_selected_rank": 1,
+              "first_hard_negative_selected_rank": null,
+              "hard_negative_selected_above_first_gold": false,
+              "question_id": "SYNQ-029-B",
+              "selected_hard_negative_ids": []
+            }
+          ],
+          "selected_hard_negative_count": 1,
+          "superseded_rca_selected_as_current_evidence_SYNQ_012_A": false
+        },
+        "selected_evidence_metrics": {
+          "by_split": {
+            "dev": {
+              "hit@1": 0.8333333333333334,
+              "hit@3": 0.9166666666666666,
+              "hit@5": 0.9444444444444444,
+              "mrr": 0.8773148148148148,
+              "ndcg@10": 0.7630668708471819,
+              "recall@1": 0.4328703703703704,
+              "recall@3": 0.6805555555555556,
+              "recall@5": 0.7569444444444444
+            }
+          },
+          "definitions": {
+            "hit@k": "1 when at least one gold chunk appears in top-k, else 0",
+            "mrr": "reciprocal rank of first gold chunk",
+            "ndcg@10": "binary relevance nDCG at rank 10",
+            "ordinary_metric_denominator": "non-abstain questions only",
+            "recall@k": "retrieved gold chunks in top-k divided by total gold chunks"
+          },
+          "hard_negative_analysis": {
+            "diagnostics": [
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-015-A"
+              },
+              {
+                "first_gold_rank": 3,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-015-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-016-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-016-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-027-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": 5,
+                "hard_negative_in_top5": true,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-027-B"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-029-A"
+              },
+              {
+                "first_gold_rank": 1,
+                "first_hard_negative_rank": null,
+                "hard_negative_in_top5": false,
+                "hard_negative_outranks_first_gold": false,
+                "question_id": "SYNQ-029-B"
+              }
+            ],
+            "gold_vs_hard_negative_win_rate": 1.0,
+            "hard_negative_in_top5_count": 1,
+            "hard_negative_outranks_first_gold_count": 0,
+            "question_count": 8
+          },
+          "overall_non_abstain": {
+            "hit@1": 0.8333333333333334,
+            "hit@3": 0.9166666666666666,
+            "hit@5": 0.9444444444444444,
+            "mrr": 0.8773148148148148,
+            "ndcg@10": 0.7630668708471819,
+            "recall@1": 0.4328703703703704,
+            "recall@3": 0.6805555555555556,
+            "recall@5": 0.7569444444444444
+          },
+          "per_question": [
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-001-A",
+              "split": "dev",
+              "task_family": "exact_identifier"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6131471927654584,
+                "recall@1": 0.5,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-001-B",
+              "split": "dev",
+              "task_family": "exact_identifier"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-002-A",
+              "split": "dev",
+              "task_family": "censoring"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-002-B",
+              "split": "dev",
+              "task_family": "censoring"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-003-A",
+              "split": "dev",
+              "task_family": "process_fact"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-003-B",
+              "split": "dev",
+              "task_family": "process_fact"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-004-A",
+              "split": "dev",
+              "task_family": "document_roles"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-004-B",
+              "split": "dev",
+              "task_family": "document_roles"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.46927872602275644,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.3333333333333333,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.3333333333333333
+              },
+              "question_id": "SYNQ-005-A",
+              "split": "dev",
+              "task_family": "identity_linking"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6713860725233041,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-005-B",
+              "split": "dev",
+              "task_family": "identity_linking"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-006-A",
+              "split": "dev",
+              "task_family": "exact_identifier"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-006-B",
+              "split": "dev",
+              "task_family": "exact_identifier"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-007-A",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-007-B",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-008-A",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-008-B",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-009-A",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.7653606369886217,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.6666666666666666,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-009-B",
+              "split": "dev",
+              "task_family": "acceptance_logic"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.6509209298071326,
+                "recall@1": 0.0,
+                "recall@10": 1.0,
+                "recall@3": 0.5,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-010-A",
+              "split": "dev",
+              "task_family": "quantitative_comparison"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": null,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 0.0,
+                "hit@3": 0.0,
+                "hit@5": 0.0,
+                "mrr": 0.0,
+                "ndcg@10": 0.0,
+                "recall@1": 0.0,
+                "recall@10": 0.0,
+                "recall@3": 0.0,
+                "recall@5": 0.0
+              },
+              "question_id": "SYNQ-010-B",
+              "split": "dev",
+              "task_family": "quantitative_comparison"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 2,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.5,
+                "ndcg@10": 0.38685280723454163,
+                "recall@1": 0.0,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-011-A",
+              "split": "dev",
+              "task_family": "quantity_semantics"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6131471927654584,
+                "recall@1": 0.5,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-011-B",
+              "split": "dev",
+              "task_family": "quantity_semantics"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6366824387328317,
+                "recall@1": 0.25,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-015-A",
+              "split": "dev",
+              "task_family": "multi_document_comparison"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 3,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 0.3333333333333333,
+                "ndcg@10": 0.36331756126716835,
+                "recall@1": 0.0,
+                "recall@10": 0.5,
+                "recall@3": 0.25,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-015-B",
+              "split": "dev",
+              "task_family": "multi_document_comparison"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-016-A",
+              "split": "dev",
+              "task_family": "process_compliance"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-016-B",
+              "split": "dev",
+              "task_family": "process_compliance"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-017-A",
+              "split": "dev",
+              "task_family": "fractography_fact"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 1,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 1.0,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-017-B",
+              "split": "dev",
+              "task_family": "fractography_fact"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 4,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 1.0,
+                "hit@3": 0.0,
+                "hit@5": 1.0,
+                "mrr": 0.25,
+                "ndcg@10": 0.16812753627111746,
+                "recall@1": 0.0,
+                "recall@10": 0.25,
+                "recall@3": 0.0,
+                "recall@5": 0.25
+              },
+              "question_id": "SYNQ-026-A",
+              "split": "dev",
+              "task_family": "quantitative_comparison"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": null,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 0.0,
+                "hit@10": 0.0,
+                "hit@3": 0.0,
+                "hit@5": 0.0,
+                "mrr": 0.0,
+                "ndcg@10": 0.0,
+                "recall@1": 0.0,
+                "recall@10": 0.0,
+                "recall@3": 0.0,
+                "recall@5": 0.0
+              },
+              "question_id": "SYNQ-026-B",
+              "split": "dev",
+              "task_family": "quantitative_comparison"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 1.0,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-027-A",
+              "split": "dev",
+              "task_family": "disposition"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 2,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.8772153153380493,
+                "recall@1": 0.5,
+                "recall@10": 1.0,
+                "recall@3": 0.5,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-027-B",
+              "split": "dev",
+              "task_family": "disposition"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 1.0,
+                "recall@1": 0.25,
+                "recall@10": 1.0,
+                "recall@3": 0.75,
+                "recall@5": 1.0
+              },
+              "question_id": "SYNQ-028-A",
+              "split": "dev",
+              "task_family": "condition_applicability"
+            },
+            {
+              "answerability": "correct_premise",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 4,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6366824387328317,
+                "recall@1": 0.25,
+                "recall@10": 0.5,
+                "recall@3": 0.5,
+                "recall@5": 0.5
+              },
+              "question_id": "SYNQ-028-B",
+              "split": "dev",
+              "task_family": "condition_applicability"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6713860725233041,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-029-A",
+              "split": "dev",
+              "task_family": "revision_evidence"
+            },
+            {
+              "answerability": "answer",
+              "first_gold_rank": 1,
+              "gold_chunk_count": 3,
+              "metrics": {
+                "hit@1": 1.0,
+                "hit@10": 1.0,
+                "hit@3": 1.0,
+                "hit@5": 1.0,
+                "mrr": 1.0,
+                "ndcg@10": 0.6508205185601091,
+                "recall@1": 0.3333333333333333,
+                "recall@10": 0.6666666666666666,
+                "recall@3": 0.3333333333333333,
+                "recall@5": 0.6666666666666666
+              },
+              "question_id": "SYNQ-029-B",
+              "split": "dev",
+              "task_family": "revision_evidence"
+            }
+          ]
+        }
+      },
+      "final_answer_behavior": {
+        "abstained_count": 13,
+        "answer_count": 36,
+        "answer_evaluation_distributions": {
+          "abstention": {
+            "INAPPROPRIATE": 13,
+            "NOT_APPLICABLE": 23
+          },
+          "completeness": {
+            "0": 21,
+            "1": 13,
+            "2": 2
+          },
+          "correctness": {
+            "0": 21,
+            "1": 13,
+            "2": 2
+          },
+          "groundedness": {
+            "2": 36
+          }
+        },
+        "answer_evaluation_means": {
+          "completeness": 0.4722222222222222,
+          "correctness": 0.4722222222222222,
+          "groundedness": 2.0
+        },
+        "citation_coverage_mean": 1.9444444444444444,
+        "citation_validity_rate": 1.0,
+        "sufficiency_diagnostics": {
+          "counts": {
+            "false_insufficient": 12,
+            "false_sufficient": 0,
+            "true_insufficient": 0,
+            "true_sufficient": 24
+          },
+          "label": "OFFLINE benchmark evaluation only; not used at runtime.",
+          "per_question": [
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-001-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-001-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-002-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-002-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-003-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-003-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-004-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-004-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-005-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-005-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-006-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-006-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-007-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-007-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-008-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-008-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-009-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-009-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-010-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-010-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-011-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-011-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-015-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-015-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-016-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-016-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-017-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-017-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-026-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-026-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-027-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-027-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-028-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "false_insufficient",
+              "final_runtime_sufficient": false,
+              "question_id": "SYNQ-028-B"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-029-A"
+            },
+            {
+              "benchmark_answerable": true,
+              "diagnostic_bucket": "true_sufficient",
+              "final_runtime_sufficient": true,
+              "question_id": "SYNQ-029-B"
+            }
+          ],
+          "residual_detection_precision": null,
+          "sufficiency_precision": 1.0,
+          "sufficiency_recall": 0.6666666666666666
+        }
+      },
+      "ready_for_one_shot_challenge": true,
+      "runtime_safety_validation": {
+        "checked_answers": 36,
+        "passed": true
+      },
+      "scope": "DEV only; challenge not executed"
+    },
+    "n": 36
+  },
+  "overall": {
+    "citation_validity_mean": 1.0,
+    "completeness_mean": 0.6833333333333333,
+    "correctness_mean": 0.6833333333333333,
+    "groundedness_mean": 2.0,
+    "n": 60
+  },
+  "schema_version": "1.0",
+  "source": {
+    "path": "data/processed/phase10d/official_run_v2/full_benchmark_metrics.json",
+    "sha256": "661a3d5bc99ba655b74e9f64da6f6e83d506f1f54aa2df7fc7b6ac538f9dcc50"
+  }
+}

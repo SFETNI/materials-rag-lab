@@ -1,0 +1,8 @@
+{
+  "expected_retrieval_unit_count": 277,
+  "frozen_jsonl_sha256": "031bd03f12e2369aee45e527952ee8c688a627b892b80d6db1160eed9651cde4",
+  "ordered_ids_sha256": "5cca5b8b66ed30501ce3831db09d3241223b3aa8bed8787c0ce8ab4069202563",
+  "ordered_id_and_retrieval_text_sha256": "c3f2268a1c308156d8cfc926d44275f3344467c5f27d8c7a447606fcb28e2de1",
+  "identity_definition": "SHA-256 of compact, key-sorted UTF-8 JSON over the ordered IDs or ordered {id,retrieval_text} records.",
+  "byte_hash_note": "The redistributable projection normalizes release metadata paths. Public reconstruction therefore verifies ordered retrieval identity; the historical private JSONL byte hash is retained for provenance but is not expected from release-normalized metadata."
+}

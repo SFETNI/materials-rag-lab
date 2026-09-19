@@ -1,0 +1,53 @@
+{
+  "benchmark_separation": "Development probes; excluded from the frozen 60-question benchmark metrics.",
+  "probe_metrics": {
+    "censoring_policy_correctness": true,
+    "deterministic_calculation_correctness": 1.0,
+    "expected_tool_error_detection": 1.0,
+    "mean_computation_actions_per_question": 0.875,
+    "mean_llm_role_calls_per_question": 0.0,
+    "probe_types": {
+      "aggregation": 2,
+      "group_comparison": 2,
+      "retrieval_plus_computation": 1,
+      "runout_semantics": 1,
+      "tool_error": 1,
+      "unsupported": 1
+    },
+    "question_count": 8,
+    "receipt_count": 6,
+    "receipt_provenance_completeness": true,
+    "receipt_question_ids": [
+      "COMP-PROBE-001",
+      "COMP-PROBE-002",
+      "COMP-PROBE-003",
+      "COMP-PROBE-004",
+      "COMP-PROBE-006",
+      "COMP-PROBE-008"
+    ],
+    "tool_error_rate": 0.125,
+    "unit_correctness": true,
+    "unsupported_request_detection": 1.0,
+    "valid_computation_request_rate": 1.0
+  },
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "path": "data/processed/phase10b/metrics.json",
+      "sha256": "8b7528560573535313ef3dda22bb8c9c47a13344dfa1bfd09f48d1a0d3c2548e"
+    },
+    {
+      "path": "data/processed/phase10c/computation_probe_metrics.json",
+      "sha256": "066ed71b84a8f61e20723a309884553e1f79d21bce34d38b4aa241ee9e9713d4"
+    }
+  ],
+  "verified_probe_metrics": {
+    "answer_count": 8,
+    "censoring_semantics_preserved": true,
+    "correct_numeric_result_from_receipts": true,
+    "question_count": 8,
+    "receipt_citation_count": 6,
+    "units_preserved": true,
+    "unsupported_or_tool_rejection_count": 0
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "enum": [
+        "internal_specification",
+        "approved_procedure",
+        "internal_record",
+        "internal_test_report",
+        "internal_quality_record",
+        "internal_approved"
+      ]
+    },
+    "build_id": {
+      "enum": [
+        "B017",
+        "B021"
+      ]
+    },
+    "build_ids": {
+      "items": {
+        "enum": [
+          "B017",
+          "B021"
+        ]
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "case_id": {
+      "const": "NCR-B017-004"
+    },
+    "corpus_id": {
+      "const": "mrl_internal_in718_v1"
+    },
+    "corpus_version": {
+      "const": "1.0.0"
+    },
+    "document_id": {
+      "enum": [
+        "MAT-SPEC-IN718-001",
+        "PROC-LPBF-001",
+        "BUILD-B017",
+        "BUILD-B021",
+        "HT-B017",
+        "HT-B021",
+        "FAT-B017",
+        "FAT-B021",
+        "FRACT-B017",
+        "NCR-B017-004",
+        "RCA-B017-004",
+        "RCA-B017-004-rev2"
+      ],
+      "type": "string"
+    },
+    "document_type": {
+      "enum": [
+        "material_specification",
+        "process_procedure",
+        "build_record",
+        "heat_treatment_record",
+        "fatigue_report",
+        "fractography_report",
+        "non_conformance_report",
+        "root_cause_analysis"
+      ]
+    },
+    "effective_from": {
+      "format": "date",
+      "type": "string"
+    },
+    "effective_to": {
+      "format": "date",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "is_current": {
+      "type": "boolean"
+    },
+    "issued_on": {
+      "format": "date",
+      "type": "string"
+    },
+    "language": {
+      "const": "en"
+    },
+    "material": {
+      "const": "IN718"
+    },
+    "organization": {
+      "const": "Fictional Materials R&D Lab"
+    },
+    "process": {
+      "const": "LPBF"
+    },
+    "related_documents": {
+      "items": {
+        "enum": [
+          "MAT-SPEC-IN718-001",
+          "PROC-LPBF-001",
+          "BUILD-B017",
+          "BUILD-B021",
+          "HT-B017",
+          "HT-B021",
+          "FAT-B017",
+          "FAT-B021",
+          "FRACT-B017",
+          "NCR-B017-004",
+          "RCA-B017-004",
+          "RCA-B017-004-rev2"
+        ]
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "revision_family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "snapshot_date": {
+      "const": "2025-05-01"
+    },
+    "source_kind": {
+      "const": "synthetic_internal"
+    },
+    "specimen_ids": {
+      "items": {
+        "pattern": "^B0(?:17|21)-F0[1-8]$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "approved",
+        "superseded"
+      ]
+    },
+    "status_at_issue": {
+      "enum": [
+        "preliminary",
+        "approved"
+      ]
+    },
+    "study_id": {
+      "const": "SYN-IN718-FAT-01"
+    },
+    "superseded_by": {
+      "anyOf": [
+        {
+          "enum": [
+            "MAT-SPEC-IN718-001",
+            "PROC-LPBF-001",
+            "BUILD-B017",
+            "BUILD-B021",
+            "HT-B017",
+            "HT-B021",
+            "FAT-B017",
+            "FAT-B021",
+            "FRACT-B017",
+            "NCR-B017-004",
+            "RCA-B017-004",
+            "RCA-B017-004-rev2"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "enum": [
+            "MAT-SPEC-IN718-001",
+            "PROC-LPBF-001",
+            "BUILD-B017",
+            "BUILD-B021",
+            "HT-B017",
+            "HT-B021",
+            "FAT-B017",
+            "FAT-B021",
+            "FRACT-B017",
+            "NCR-B017-004",
+            "RCA-B017-004",
+            "RCA-B017-004-rev2"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "synthetic": {
+      "const": true
+    },
+    "title": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "corpus_version",
+    "synthetic",
+    "source_kind",
+    "document_id",
+    "revision_family_id",
+    "title",
+    "document_type",
+    "organization",
+    "material",
+    "process",
+    "study_id",
+    "build_ids",
+    "revision",
+    "status",
+    "authority",
+    "is_current",
+    "issued_on",
+    "effective_from",
+    "effective_to",
+    "snapshot_date",
+    "related_documents",
+    "language",
+    "supersedes",
+    "superseded_by"
+  ],
+  "title": "Frozen synthetic IN718 corpus front matter, v1.0.0",
+  "type": "object"
+}

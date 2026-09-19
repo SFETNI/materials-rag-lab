@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "build_id": {
+      "enum": [
+        "B017",
+        "B021"
+      ]
+    },
+    "cycles_observed": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "derived_fields": {
+      "const": [
+        "stress_min_mpa",
+        "stress_amplitude_mpa",
+        "stress_mean_mpa"
+      ]
+    },
+    "environment": {
+      "const": "laboratory air"
+    },
+    "failure_observed": {
+      "type": "boolean"
+    },
+    "frequency_hz": {
+      "const": 20
+    },
+    "gauge_length_mm": {
+      "const": 12.0
+    },
+    "loading_mode": {
+      "const": "axial tension-tension"
+    },
+    "nominal_gauge_diameter_mm": {
+      "const": 4.0
+    },
+    "orientation": {
+      "const": "Z parallel to specimen loading axis"
+    },
+    "outcome": {
+      "enum": [
+        "failure",
+        "runout"
+      ]
+    },
+    "record_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "right_censored": {
+      "type": "boolean"
+    },
+    "section_id": {
+      "const": "results"
+    },
+    "source_document": {
+      "enum": [
+        "FAT-B017",
+        "FAT-B021"
+      ]
+    },
+    "specimen_id": {
+      "pattern": "^B0(?:17|21)-F0[1-8]$",
+      "type": "string"
+    },
+    "stress_amplitude_mpa": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "stress_area_basis": {
+      "const": "measured mean gauge diameter"
+    },
+    "stress_max_mpa": {
+      "enum": [
+        400,
+        600,
+        700
+      ]
+    },
+    "stress_mean_mpa": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "stress_min_mpa": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "stress_ratio": {
+      "const": 0.1
+    },
+    "surface_condition": {
+      "const": "as-built gauge; machined grips only"
+    },
+    "temperature_c": {
+      "const": 23
+    },
+    "temperature_tolerance_c": {
+      "const": 2
+    },
+    "value_origin": {
+      "const": "synthetic_reported"
+    },
+    "waveform": {
+      "const": "sinusoidal"
+    }
+  },
+  "required": [
+    "record_id",
+    "specimen_id",
+    "build_id",
+    "source_document",
+    "section_id",
+    "stress_max_mpa",
+    "stress_ratio",
+    "stress_min_mpa",
+    "stress_amplitude_mpa",
+    "stress_mean_mpa",
+    "frequency_hz",
+    "temperature_c",
+    "temperature_tolerance_c",
+    "loading_mode",
+    "waveform",
+    "environment",
+    "nominal_gauge_diameter_mm",
+    "gauge_length_mm",
+    "stress_area_basis",
+    "surface_condition",
+    "orientation",
+    "cycles_observed",
+    "outcome",
+    "failure_observed",
+    "right_censored",
+    "value_origin",
+    "derived_fields"
+  ],
+  "title": "Authored specimen fixture; not an empirical database record",
+  "type": "object"
+}

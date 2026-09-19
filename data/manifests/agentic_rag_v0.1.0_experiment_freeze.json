@@ -1,0 +1,69 @@
+{
+  "budgets": {
+    "inherits_phase10c_dev_freeze": true
+  },
+  "challenge_evaluation_hashes": {
+    "data/processed/phase10d/official_run_v2/challenge_answer_evaluation.jsonl": "edd48704a88f8342f037e332e8bda1ee8bf2ff07e8f364724a843bec209a5589",
+    "data/processed/phase10d/official_run_v2/challenge_metrics.json": "581fb3f0b694b1a3f79bfdd72f91526d441a8a3c2240f29d45fcc1db4473896b",
+    "data/processed/phase10d/official_run_v2/dev_vs_challenge.json": "96066956afc69d09b6f8612a780ecf2f2a5a0b964680e30813d92c1064e5b29d",
+    "data/processed/phase10d/official_run_v2/full_benchmark_metrics.json": "661a3d5bc99ba655b74e9f64da6f6e83d506f1f54aa2df7fc7b6ac538f9dcc50",
+    "data/processed/phase10d/official_run_v2/rag_ladder_summary.json": "cae48bf8eebe3c22fc4cae15d9a416305c050587d3f52dd9e7cd422cea64f50a"
+  },
+  "challenge_runtime_output_hashes": {
+    "data/processed/phase10d/official_run_v2/challenge_agentic_answers.jsonl": "7dd2cb3812e942d9898382ea40bd18de4a7e29cbdb54e8b48003404faf9f24cd",
+    "data/processed/phase10d/official_run_v2/challenge_answer_evaluation.jsonl": "edd48704a88f8342f037e332e8bda1ee8bf2ff07e8f364724a843bec209a5589",
+    "data/processed/phase10d/official_run_v2/challenge_cost_report.json": "698986431cff408b9d5c7fff3c1612ffd27a9a3e47984a438fe51d9703a64541",
+    "data/processed/phase10d/official_run_v2/challenge_metrics.json": "581fb3f0b694b1a3f79bfdd72f91526d441a8a3c2240f29d45fcc1db4473896b",
+    "data/processed/phase10d/official_run_v2/challenge_traces.jsonl": "724ed13a435d2fc1873ee269ad8a7392597f589568fef88f0918ceddc77278e1",
+    "data/processed/phase10d/official_run_v2/challenge_verification_results.jsonl": "e1dba864387b763f036be67615a3e6adaa23e64e298f07a750e205d5f6b70701",
+    "data/processed/phase10d/official_run_v2/challenge_verified_claims.jsonl": "53108d3525ef9d4a324a162e60e9748314e2111fcde006e1f4b23cc40f7211df",
+    "data/processed/phase10d/official_run_v2/dev_vs_challenge.json": "96066956afc69d09b6f8612a780ecf2f2a5a0b964680e30813d92c1064e5b29d",
+    "data/processed/phase10d/official_run_v2/full_benchmark_metrics.json": "661a3d5bc99ba655b74e9f64da6f6e83d506f1f54aa2df7fc7b6ac538f9dcc50",
+    "data/processed/phase10d/official_run_v2/pre_run_freeze_verification.json": "7c42c08ece9710ce83070b418e995a4efebe21bf9dffda9f637004f3eae78723",
+    "data/processed/phase10d/official_run_v2/rag_ladder_summary.json": "cae48bf8eebe3c22fc4cae15d9a416305c050587d3f52dd9e7cd422cea64f50a",
+    "experiments/24_one_shot_challenge_report.py": "c96ec37f7b9a4b367bdbf7b837f70b9b81a58ef8c494e308342dfbb0da10c559",
+    "experiments/24_one_shot_challenge_report.txt": "61b998ccc6b5d5c7f30521ad2f5c4b7103fc9d02df3b52d60563829c2f12e79d"
+  },
+  "computation_schema": "phase10b_scientific_computation_v1",
+  "corpus_dataset_identity": {
+    "benchmark_hash": "58bece813c18c1b55b4045c2d34d23d9cf9febeb63c4c69b4431c0137b3f1110",
+    "retrieval_units_hash": "031bd03f12e2369aee45e527952ee8c688a627b892b80d6db1160eed9651cde4"
+  },
+  "environment": {
+    "pyproject_sha256": "5083148fdfe4f135886bb3227047aef155a06e92a6906fe9d619f1e48ba72679"
+  },
+  "experiment": "agentic_rag_v0.1.0",
+  "experiment_status": "frozen_complete",
+  "freeze_provenance_chain": [
+    "data/processed/manifests/phase_10c_dev_freeze.json",
+    "data/processed/phase10d/phase10b_manifest_mutation_diagnostic.json",
+    "data/processed/manifests/phase_10c_dev_refreeze_v2.json",
+    "data/processed/manifests/phase_10d_challenge_freeze.json",
+    "data/processed/manifests/agentic_rag_v0.1.0_experiment_freeze.json"
+  ],
+  "model_configuration": {
+    "model": "gpt-5.5",
+    "reasoning_effort": "low"
+  },
+  "phase10c_dev_refreeze_v2_hash": "bf5b9efc4688d9496792aded2ab749ca56373a963231ccb2896fad03d90a587e",
+  "phase10c_original_dev_freeze_hash": "6e324ad97ad5c06357348afd642501dd354e95f124d9ff0f60a1c7717dc8c52c",
+  "phase10d_challenge_freeze_hash": "798f03e8fb4464d56839d2ce0764a4ff59544a2daddf83bc95a1dd501eb105b4",
+  "prompt_hashes": {
+    "docs/generation/agentic_answer_writer_v1.md": "887c97c6123d856ca0ece4355dcee666a15616edeaf882c5439246777778359c",
+    "docs/generation/agentic_orchestrator_v1.md": "737b681a65d77364f0440df93d63b5ce0918b3b374c0111a20f206582bcdfebd",
+    "docs/generation/answer_evaluator_v1.md": "fdf10980f4d5ae9265cca117a4de5ce6f7d97e26bfc7707ddae7a026c042e518",
+    "docs/generation/claim_drafter_v1.md": "d66737b88c2a71296e2f5719b2509f53b650ebd88622f98093f66502c8f61836",
+    "docs/generation/evidence_verifier_v1.md": "e5a5b1937aae965600a699a4eadd478a66909430c93fa952cb25ee6e6642153f",
+    "docs/generation/scientific_analyst_v1.md": "359de1175e5d4c2a64bb48c1d8df74603224504722f52c7c4bd3510aac213b04"
+  },
+  "timestamp_utc": "2026-09-19T01:10:51.659270+00:00",
+  "tool_registry": [
+    "HYBRID_SEARCH",
+    "MULTI_QUERY_SEARCH",
+    "DECOMPOSITION_SEARCH",
+    "CHECK_REVISION_STATUS",
+    "SCIENTIFIC_ANALYSIS"
+  ],
+  "verifier_schema": "evidence_verifier_v1",
+  "writer_schema": "agentic_answer_writer_v1"
+}
